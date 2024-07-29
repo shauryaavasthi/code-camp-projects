@@ -45,22 +45,22 @@ h2 {
   content: "$"; 
 }
 
-.menu-item {
-    display: flex;
+.item {
+    display: inline-block;
     justify-content: space-between;
     padding: 5px 0;
 }
 
-.menu-item .item-name {
+.item {
     flex-grow: 1;
 }
 
-.menu-item .item-price {
+.price {
     text-align: right;
     width: 50px; 
 }
 
-.item-price {
+.price {
     font-weight: bold;
 }
 
