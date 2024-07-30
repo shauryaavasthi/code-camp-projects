@@ -64,6 +64,10 @@ h2 {
     font-weight: bold;
 }
 
+.coffee .dessert {
+    text-align: left
+}
+
 .bottom-line {
     margin-top: 25px;
 }
