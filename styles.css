@@ -10,7 +10,7 @@ hr {
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     padding: 20px;
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .menu {
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Impact', sans-serif;
 }
 
 h1 {
@@ -46,22 +46,22 @@ h2 {
 }
 
 .item {
-    display: inline-block;
+    display: flex;
     justify-content: space-between;
     padding: 5px 0;
-}
-
-.item {
     flex-grow: 1;
 }
 
 .price {
     text-align: right;
-    width: 50px; 
+    width: 50px;
+    font-weight: bold;
 }
 
-.price {
-    font-weight: bold;
+.coffee, .dessert {
+    text-align: left;
+}
+
 }
 
 .coffee .dessert {
@@ -82,7 +82,10 @@ a {
     color: black;
 }
 
-a:visited {color: black;}
+a:visited {
+    color: black;
+    transition: color 0.3s ease;
+}
 a:hover {color: brown;}
 a:active {color: brown;}
 
