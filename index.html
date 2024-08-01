@@ -7,13 +7,28 @@
         <link href="styles.css" rel="stylesheet">
     </head>
 
+<script>
+    function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section.style.display === 'none') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    }
+</script>
+    
     <body>
         <div class="menu">
             <main>
                 <h1>CAMPER CAFE</h1>
                 <p class="established">Est. 2020</p>
                 <hr>
-                <section>
+                
+                <button onclick="toggleSection('coffeeSection')">Toggle Coffee</button>
+                <button onclick="toggleSection('dessertSection')">Toggle Dessert</button>
+
+                <section id="coffeeSection">
                   <h2>Coffee</h2>
                   <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
                   <article class="item">
@@ -33,7 +48,7 @@
                   </article>
                 </section>
 
-                <section>
+                <section id="desserSection">
                     <h2>Dessert</h2>
                     <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
             
