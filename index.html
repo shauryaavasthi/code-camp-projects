@@ -6,18 +6,6 @@
         <title>Cafe Menu</title>
         <link href="styles.css" rel="stylesheet">
     </head>
-
-<script>
-    function toggleSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section.style.display === 'none') {
-            section.style.display = 'block';
-        } else {
-            section.style.display = 'none';
-        }
-    }
-</script>
-    
     <body>
         <div class="menu">
             <main>
@@ -48,7 +36,7 @@
                   </article>
                 </section>
 
-                <section id="desserSection">
+                <section id="dessertSection">
                     <h2>Dessert</h2>
                     <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
             
@@ -70,6 +58,17 @@
                 <p><a href="https://www.freecodecamp.org">Visit our website</a></p>
                 <p class="address">Free Code Camp Drive</p>
               </footer>
+
+            <script>
+    function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section.style.display === 'none') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    }
+</script>
         </div>
       </body>
     </html>
